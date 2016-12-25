@@ -41,7 +41,7 @@ def mail(recipitent, message):
 	    s = smtplib.SMTP('smtp.gmail.com:587')
 	    s.ehlo()
 	    s.starttls()
-	    s.login('jeevu.g1@gmail.com','105522114')
+	    s.login('jeevu.g1@gmail.com',password_here)
 	    s.sendmail(me, you, msg.as_string())
 	    s.quit()        
 	    print "Successfully sent email"
